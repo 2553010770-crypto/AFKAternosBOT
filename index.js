@@ -15,9 +15,9 @@ app.listen(port, () => {
 
 // --- CẤU HÌNH BOT MINECRAFT ---
 const botOptions = {
-  host: 'dia_chi_server_cua_ban.aternos.me', // Thay bằng địa chỉ IP server
-  port: 12345,       // Thay bằng Port server (xem trên Aternos)
-  username: 'AFK_Bot', // Tên bot
+  host: '36Survival-NOT2.aternos.me', // Thay bằng địa chỉ IP server
+  port: 54315,       // Thay bằng Port server (xem trên Aternos)
+  username: 'ChoCaoBang', // Tên bot
   version: false,    // Tự động nhận diện version
   // password: 'pass_neu_co' // Bỏ comment nếu server bắt login (authme)
 };
@@ -53,5 +53,6 @@ function createBot() {
     // Không cần làm gì, sự kiện 'end' sẽ kích hoạt reconnect
   });
 }
+
 
 createBot();
