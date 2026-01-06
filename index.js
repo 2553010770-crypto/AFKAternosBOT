@@ -15,15 +15,17 @@ app.listen(port, () => {
 
 // --- PHẦN 2: CẤU HÌNH BOT ---
 const botOptions = {
-  // Thay đổi 3 dòng dưới đây cho đúng server của bạn
-  host: '36Survival-NOT2.aternos.me', // Ví dụ: mysever.aternos.me
-  port: 54315,       // Xem số Port trên trang Aternos (Không phải lúc nào cũng là 25565)
-  username: 'ChoCB', // Tên bot trong game
+  host: '36Survival-NOT2.aternos.me',
+  port: 54315,
+  username: 'ChoCB',
   
-  // Cấu hình nâng cao
-  version: false,     // Để false để bot tự động nhận diện phiên bản (1.21.1)
-  auth: 'offline',    // Chế độ crack (Nhớ bật Cracked trong Aternos)
-  checkTimeoutInterval: 60 * 1000 // Tăng thời gian chờ (Fix lỗi Forge load lâu)
+  // SỬA DÒNG NÀY:
+  // Thay vì để false, hãy điền chính xác phiên bản Java gần nhất
+  // Lưu ý: Mineflayer chỉ hỗ trợ các bản Java: 1.21, 1.21.1, v.v.
+  version: "1.21.11", 
+  
+  auth: 'offline',
+  checkTimeoutInterval: 60 * 1000
 };
 
 let bot;
@@ -86,3 +88,4 @@ function createBot() {
 
 // Bắt đầu chạy bot
 createBot();
+
