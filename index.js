@@ -18,7 +18,7 @@ const botOptions = {
   host: '36Survival-NOT2.aternos.me', // Thay bằng địa chỉ IP server
   port: 54315,       // Thay bằng Port server (xem trên Aternos)
   username: 'ChoCaoBang', // Tên bot
-  version: false,    // Tự động nhận diện version
+  version: true,    // Tự động nhận diện version
   // password: 'pass_neu_co' // Bỏ comment nếu server bắt login (authme)
 };
 
@@ -56,3 +56,4 @@ function createBot() {
 
 
 createBot();
+
